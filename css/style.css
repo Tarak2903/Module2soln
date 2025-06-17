@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 15px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 2em;
+}
+
+.section-container {
+  width: 100%;
+}
+
+.section {
+  position: relative;
+  border: 1px solid black;
+  background-color: #f2f2f2;
+  padding: 30px 15px 15px 15px;
+  margin: 15px;
+  float: left;
+}
+
+.section-title {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ffa500;
+  padding: 5px 10px;
+  border: 1px solid black;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.section p {
+  margin-top: 20px;
+}
+
+/* Desktop (992px and up) */
+@media (min-width: 992px) {
+  .section {
+    width: 30%;
+    margin: 1.5%;
+  }
+}
+
+/* Tablet (768px to 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .section {
+    width: 47%;
+    margin: 1.5%;
+  }
+
+  .section:nth-child(3) {
+    width: 96%;
+    margin: 1.5% 2%;
+    clear: both;
+  }
+}
+
+/* Mobile (767px and below) */
+@media (max-width: 767px) {
+  .section {
+    width: 100%;
+    margin: 15px 0;
+    clear: both;
+  }
+}
